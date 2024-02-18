@@ -5,10 +5,8 @@ import './App.css'; // Ensure you have an App.css file in your project's src dir
 
 function App() {
   const [search, setSearch] = useState('');
-  // eslint-disable-next-line
-  const [lang, setLang] = useState('arm');
-  // eslint-disable-next-line
-  const [wholeword, setWholeword] = useState(false);
+  const lang = 'arm';
+  const wholeword = false;
   const [words, setWords] = useState([]);
   const [matching, setMatching] = useState([]);
   const [error, setError] = useState(null);
