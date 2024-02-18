@@ -1,7 +1,7 @@
 // App.js or your main component file
 import React, { useState, useEffect } from 'react';
-import Info from './Info';
-import './App.css'; // Ensure you have an App.css file in your project's src directory
+import Info from './info';
+import './app.css'; // Ensure you have an App.css file in your project's src directory
 
 function App() {
   const [search, setSearch] = useState('');
