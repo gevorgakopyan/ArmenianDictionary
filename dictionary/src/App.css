@@ -1,0 +1,41 @@
+/* App.css */
+.container {
+  margin: 0 auto;
+  padding: 0 20px; /* This adds margin to the left and right sides */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 70%; /* Makes the search bar larger */
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  list-style-type: none; /* Removes the bullet points */
+  padding: 0;
+  text-align: center; /* Centers the text in each grid item */
+}
+
+/* If you want to add more space around the grid */
+.word-grid {
+  margin: 20px 0;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
