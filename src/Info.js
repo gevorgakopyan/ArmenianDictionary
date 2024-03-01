@@ -100,37 +100,42 @@ const Info = () => {
       </h2>
       <div id="help" style={dynamicHelpStyle}>
       <div>
-      <h3>Regular expressions</h3>
+      <h3>RegEx</h3>
       <p>
-        <a href="https://en.wikipedia.org/wiki/Regular_expression">Regular expressions</a>
-        allow you to define a search pattern. The words in the
-        chosen dictionary are then filtered, and only those matching the pattern are
-        displayed.
+        <a href="https://en.wikipedia.org/wiki/Regular_expression">RegEx</a>
+        թույլ է տալիս սահմանել որոնման օրինաչափություն:
+        Այնուհետև ընտրված բառարանի բառերը զտվում են,
+        և ցուցադրվում են միայն օրինակին համապատասխանող բառերը:
       </p>
       <p>
-        If you want to learn regular expressions in depth, you can start with
-        <a href="https://www.regular-expressions.info/quickstart.html">this guide on regular-expressions.info</a>.
+      Եթե ցանկանում եք խորությամբ սովորել կանոնավոր արտահայտություններ, կարող եք սկսել
+        <a href="https://www.regular-expressions.info/quickstart.html">այս ուղեցույցից regular-expressions.info կայքում</a>.
       </p>
-      <h3>Examples</h3>
-      <p>
-        The first column shows a pattern, the second an example of a word it
-        matches, the third an example of a word it doesn't match.
-        Hover over an example for more information.
-      </p>
+      <h3>Օրինակներ</h3>
       <table style={tableStyle}>
         <thead>
           <tr>
             <th>RegEx</th>
-            <th>matches</th>
-            <th>doesn't match</th>
+            <th>համապատասխանում</th>
+            <th>չի համապատասխանում</th>
           </tr>
         </thead>
         <tbody>
           {/* Row for the regex b.g */}
           <tr>
-            <td style={cellStyle}><code style={codeStyle} title="'b', followed by any character, followed by 'g'">b.g</code></td>
-            <td style={cellStyle}><code style={codeStyle}>bag</code>, <code style={codeStyle}>big</code>, <code style={codeStyle}>bug</code></td>
-            <td style={cellStyle}><code style={codeStyle} title="misses a character between b and g">bg</code>, <code style={codeStyle} title="more than one character between b and g">bang</code></td>
+            <td style={cellStyle}><code style={codeStyle} title="">բ․ր</code></td>
+            <td style={cellStyle}><code style={codeStyle}>բար</code>, <code style={codeStyle}>բուր</code></td>
+            <td style={cellStyle}><code style={codeStyle} title="">բր</code>, <code style={codeStyle} title="">բաար</code></td>
+          </tr>
+          <tr>
+            <td style={cellStyle}><code style={codeStyle} title="">բ․*ր</code></td>
+            <td style={cellStyle}><code style={codeStyle}>բաասդր</code>, <code style={codeStyle}>բուր</code></td>
+            <td style={cellStyle}><code style={codeStyle} title="">բտ</code></td>
+          </tr>
+          <tr>
+            <td style={cellStyle}><code style={codeStyle} title="">^բ․*ր</code></td>
+            <td style={cellStyle}><code style={codeStyle}>բաասդր</code>, <code style={codeStyle}>բուր</code></td>
+            <td style={cellStyle}><code style={codeStyle} title="">աբր</code></td>
           </tr>
           {/* Additional rows for other regex patterns */}
           {/* ... */}
