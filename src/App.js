@@ -54,7 +54,7 @@ function App() {
   return (
     <div className="container">
       <Info/>
-      <h1 className="title">RegEx-Հանգաբառարան</h1>
+      <h1 className="title">RegEx-Բառարան</h1>
       <form className="search-form">
         <input
           className="search-input"
