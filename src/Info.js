@@ -142,6 +142,7 @@ const Info = () => {
         </tbody>
       </table>
       <h3>This project was made by Gevorg Akopyan for Armeninan 105 class at UCLA</h3>
+      <p>You can access the demo using this <a href='https://drive.google.com/file/d/1ocuJ6I3AUr_0qUWhAWOrWmS5yh2mXdFN/view?usp=drive_link'>link</a></p>
     </div>
       </div>
     </section>
