@@ -124,7 +124,7 @@ const Info = () => {
           {/* Row for the regex b.g */}
           <tr>
             <td style={cellStyle}><code style={codeStyle} title="">բ․ր</code></td>
-            <td style={cellStyle}><code style={codeStyle}>բար</code>, <code style={codeStyle}>բուր</code></td>
+            <td style={cellStyle}><code style={codeStyle}>բար</code>, <code style={codeStyle}>բոր</code></td>
             <td style={cellStyle}><code style={codeStyle} title="">բր</code>, <code style={codeStyle} title="">բաար</code></td>
           </tr>
           <tr>
@@ -141,6 +141,7 @@ const Info = () => {
           {/* ... */}
         </tbody>
       </table>
+      <h3>This project was made by Gevorg Akopyan for Armeninan 105 class at UCLA</h3>
     </div>
       </div>
     </section>
